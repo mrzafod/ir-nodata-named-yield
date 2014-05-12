@@ -1,0 +1,19 @@
+<head>
+  <title>ir-nodata-named-yield</title>
+</head>
+
+<body></body>
+
+<template name="layout">
+	{{> yield region="header"}}
+	{{> yield}}
+	{{> yield region="footer"}}
+	{{> sample text='Common Way'}}
+</template>
+
+<template name="sample">
+	<div style="background-color:#{{bgcolor}}; min-height: 200px; padding-top: 80px;">
+		<h1 style="color:#{{textcolor}} font-size: 40px;">{{text}}</h1>
+		<p>{{logThis}}</p> 
+	</div>	
+</template>
